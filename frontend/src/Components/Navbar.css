@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap');
+*{
+    margin:0;padding: 0;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(192, 0, 0);
+}
+.title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.headers-wrap{
+    display: flex;
+    align-items: center;
+}
+.title h1{
+    font: 20px "Playwrite AU NSW";
+    color: rgb(239, 255, 253);
+    margin: 0 0 0 15px;
+}
+.title img{
+    width: 60px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    background-color: rgba(232, 255, 227, 0.5);
+    margin: 0 0 0 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+
+}
+.location img{
+    width: 30px;
+}
+.location h2{
+    font: 15px Arial;
+    margin: 0 0 0 10px;
+}
+.search-bar{
+    display:flex;
+    align-items: center;
+    background-color: rgb(255, 235, 235);
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+}
+.search-bar:hover{
+    transform: scale(1.2);
+}
+.search-bar img{
+    width: 25px;
+    margin: 3px 3px 3px 5px;
+}
+.search-bar p{
+    font: 35px Arial;
+    color:grey;
+}
+.search-bar input{
+    padding: 2px;
+    font: 17px Arial;
+    margin: 6px;
+    width: 400px;
+    border:none;
+    background-color: rgb(0,0,0,0)  ;
+}
+::placeholder{
+    font-style: italic;
+}
+.navlink{
+    text-decoration: none;
+    color:#ffffff;
+    margin: 0 25px 0 0;
+    font: 20px Consolas, monospace;
+    transition: all 0.25s ease-out;
+}
+.navlink:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+    color: rgb(255, 194, 62);
+}
+.loginbutton{
+    padding: 5px 8px;
+    font: 15px Arial;
+    font-weight: bold;
+    background-color: aliceblue;
+    border: 2px solid green;
+    border-radius: 7px;
+    margin: 0 20px 0 10px;
+    transition: all 0.5s ease-out;
+}
+.loginbutton:hover{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(216, 255, 158);
+}
+.signup{
+    text-decoration: none;
+    color: rgb(141, 255, 141);
+    margin: 0 10px 0 0;
+}
+.signup:hover{
+    font-weight: bold;
+    color: white;
+}
+.loggedindata{
+    display:flex;
+    align-items: center;
+}
+.profile-img{
+    width: 25px;
+    background-color: bisque;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px 0 0;
+}
+.loggedindata p{
+    margin: 0 15px 0 0;
+    color: white;
+    font: 20px arial;
+    font-style: italic;
+}
+.loggedindata button{
+    font: 15px sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: red;
+    transition: all 0.25s ease-out;
+}
+.loggedindata button:hover{
+    cursor: pointer;
+    background-color: rgb(59, 0, 0);
+    color: white;
+}
+
+.hamburger-btn{
+    cursor: pointer;
+    width: 40px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+.hamburger-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 4px solid navy;
+    border-radius: 20px;
+}
+.submenu-wrap{
+    position:absolute;
+    top: 12%;
+    right: 1.5%;
+    width: 300px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+.submenu-open{
+    max-height: 400px;
+}
+.submenu{
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.user-info img{
+    width: 30px;
+    margin: 0 20px 0 0;
+    border-bottom: 1px grey;
+}
+.user-info p{
+    text-align: center;
+    font: 20px Arial;
+    font-weight: bold;
+
+}
+.submenu hr{
+    margin: 0;
+    background-color: grey;
+    width: 100%;
+    height: 1px;
+}
+.submenu-link{
+    text-decoration: none;
+}
+.submenu-link-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease-out;
+}
+.submenu-link-wrapper:hover{
+    background-color: rgb(226, 236, 250);
+}
+.submenu-link-wrapper p:hover{
+    font-weight: bold;
+    transform: translateX(5px);
+}
+.submenu-link p{
+    width: 100%;
+    color: black;
+    font: 18px Arial;
+}
+.submenu-link img{
+    width: 18px;
+    margin: 0 20px 0 0 ;
+}
+
+@media only screen and (max-width: 500px){
+    nav{
+        display: block;
+        max-height: 40vh;
+    }
+    .title{
+        display: block;
+    }
+    .location{
+        margin: 10px 0;
+    }
+    .search-bar{
+        margin: 20px 0;
+    }
+    .submenu-wrap{
+        position:absolute;
+        top: 30%;
+        right: 0.5%;
+    }
+    .loggedindata{
+        justify-content: space-between;
+    }
+}

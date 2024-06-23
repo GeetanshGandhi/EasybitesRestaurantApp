@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    font: 30px Arial;
+    font-weight: bold;
+}
+.catitem-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,60 @@
+.fooditem-container{
+    width: 275px;
+    border: 4px solid rgb(85, 0, 0);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px 2px;
+    transition: all 0.2s ease-out;
+}
+.fooditem-container:hover{
+    transform: scale(1.1);
+}
+.fooditem-container img{
+    width: 240px;
+    height: 145px;
+    border-radius: 20px;
+}
+.item-title{
+    text-align: center;
+    font: 17px Arial;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.price{
+    text-align: right;
+    color: green;
+    font: 25px Consolas, monospace;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 20px 0 0;
+}
+.buynow{
+    margin: 10px 20px 5px 20px;
+    width: 100%;
+    padding: 5px 0;
+    font: 18px Arial;
+    background-color: rgb(226, 1, 1);
+    color:white;
+    border: 2px solid rgb(145, 0, 0);
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+}
+.buynow:hover{
+    background-color: rgb(145,0,0);
+    cursor: pointer;
+}
+.addtocart{
+    margin: 10px 20px;
+    width: 100%;
+    padding: 5px 0;
+    font: 18px Arial;
+    background-color: white;
+    border: 2px solid rgb(145,0,0);
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+}
+.addtocart:hover{
+    background-color: rgb(255, 132, 132);
+    color:white;
+    cursor: pointer;
+}

@@ -1,0 +1,79 @@
+.paper{
+    background-color: white;
+    width:600px;
+    padding: 15px 20px;
+    box-shadow: 0 0 20px #0000005b;
+    border-radius: 20px;
+    min-height: 70vh;
+}
+h1{
+    text-align: center;
+}
+.gtotal{
+    text-align: center;
+    margin: 25px 0;
+    font: 25px consolas,monospace;
+}
+.payment-msg{
+    text-align: center;
+    font: 20px Arial;
+}
+.add-wrap{
+    max-width: 400px;
+    margin:25px 0 0 0;
+}
+.add-wrap p{
+    font: 20px Arial;
+}
+.address{
+    margin: 25px 20px 0 0;
+    font: 20px Arial;
+}
+.prompt-otp{
+    text-align: center;
+    font: 18px Arial;
+    margin: 40px 0;
+    background-color: rgb(212, 236, 255);
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+}
+.otp-wrap{
+    display: flex;
+    justify-content: center;
+
+    width: 200px;
+}
+.finish-btn{
+    margin: 50px 0 0 0;
+    font: 25px Arial;
+    padding: 4px 60px;
+    background-color: rgb(83, 221, 255);
+    border: 3px solid navy;
+    border-radius: 15px;
+    transition: all 0.25s ease-out;
+}
+.finish-btn:hover{
+    cursor: pointer;
+    background-color: navy;
+    color:white;
+    transform: scale(1.1);
+}
+.deliverby-msg{
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.del-name{
+    margin: 10px 0 0 0;
+    text-align: center;
+    font: 18px Arial;
+    font-weight: bold;
+    color: rgb(0, 57, 110);
+}
+.del-contact{
+    font: 25px Consolas,monospace;
+    color:rgb(0, 94, 182);
+}
+#call{
+    width:25px;
+}

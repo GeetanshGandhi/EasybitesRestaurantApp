@@ -1,0 +1,20 @@
+.admpending-head{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.pen-head{
+    font: 30px Arial;
+    color: rgb(109, 0, 0);
+    font-weight: bold;
+    padding: 0 30px;
+}
+.penorder-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}

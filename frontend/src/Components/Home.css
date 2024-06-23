@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
+.home-container{
+	min-height: 83vh;
+	background-color: rgb(255, 238, 238);
+	padding: 15px;
+}
+.offerwindow{
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgb(184, 19, 19), rgb(78,0,0,0));
+    height: 300px;
+}
+.offerwindow p{
+    font: 100px Arial;
+    color: white;
+}
+.cat-container{
+    margin: 0 70px;
+}
+.arrow-wrap{
+    height:100%;
+    padding: 10px;
+    transition: all 0.25s ease-out;
+}
+.arrow-wrap:hover{
+    transform: scaleX(1.5);
+    cursor: pointer;
+}
+.cat-scroll{
+    position: relative;
+    display:flex;
+    background-color: white;
+    margin: 20px 10px;
+    padding: 10px 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent)
+}
+.cat-slide{
+    white-space: nowrap;
+    display: flex;
+    animation: 15s infi-scroll infinite linear;
+}
+@keyframes infi-scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }    
+}
+.cat-scroll:hover .cat-slide{
+    animation-play-state: paused;
+}
+.cat-item{
+    border: 2px dashed rgb(175, 0, 0);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    transition: all 0.2s ease-out;
+}
+.cat-item:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgb(255, 199, 199);
+}
+.cat-item img{
+    width: 100px;
+}
+.cat-item p{
+    text-align: center;
+    font: 17px Arial;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    text-overflow: initial;
+}
+.view-cat{
+    text-decoration: none;
+    color:rgb(90, 0, 0);
+}
+.arrows{
+    width: 70px;
+}
+
+.todaysp{
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+.todaysp h2{
+    font: 25px "Playwrite VN", sans-serif;
+    padding: 0 0 0 20px;
+}
+.fooditem-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px){
+    .offerwindow p{
+        font: 20px Arial;
+    }
+    .cat-container{
+        margin: 0;
+    }
+    .arrow-wrap{
+        padding: 0;
+    }
+    .arrows{
+        width: 40px;
+    }
+    .cat-slide{
+        animation: 15s infi-scroll infinite linear;
+    }
+    .todaysp{
+        margin: 20px 1px;
+    }
+}
